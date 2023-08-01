@@ -17,6 +17,7 @@ repo_dicts = response_dict['items']
 print(f"Repos returned: {len(repo_dicts)}") 
 
 print(f"\nSelected information about each repository:")
+
 for repo_dict in repo_dicts:
     print(f"Name: {repo_dict['name']}") 
     print(f"Owner: {repo_dict['owner']['login']}") 
@@ -25,9 +26,4 @@ for repo_dict in repo_dicts:
     print(f"Created: {repo_dict['created_at']}") 
     print(f"Updated: {repo_dict['updated_at']}") 
     print(f"Description: {repo_dict['description']}")
-
-
-
-
-
 
